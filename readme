@@ -2,3 +2,47 @@ file dove scrivo gli appunti
 questo repository sarà usato per imparare bene a usare javascript 
 tramite questo corso su youtube di 6 ore il cui link è 
 https://www.google.com/search?q=corso+javascript&rlz=1C1ONGR_itIT1167IT1167&oq=corso+javascript&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDM0OTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:0f7e5579,vid:vL5ldIUqnb0,st:0
+
+
+cos'è javascript:
+linguaggio di programmazione event based, ci permette di interagire con la pagina da statica a dinamica
+sono stati implementati degli API (una risorsa di dati)
+javascript è un codice interpretato poichè viene letto dal broswer così come è scritto 
+server side significa cehe è codice che viene calcolato sul server a cui noi non possiamo accederci  da cui poi ci arriva la risposta 
+quindi client side è sul lato broswer e server side è sul lato macchina (tipo java python ecc...)
+pagina statica 
+
+si può aggiungere alla pagina in tre modi 
+si può fare interno esterno e inline 
+interno con il tag script oppure nell'head m viene eseguita prima che il body venga eseguito e per esempio alcune reference che ci sono nel body non sono ancora state inizializzate 
+esternamente con il comando <script src="filejs.js"> <script> che deve venire creato nella raccolta file 
+oppure inline (sconsigliato) chiamando le funzioni direttamente, sconsigliata perchè magari un click su un stesso elemento può succedere pu voltee dovrebbe venir cambiato per ogni caso 
+
+
+strategie di caricamento del codice:
+essendo che html e css potrebbe non esse4re caricato quando js viene avviato  quindi si ha tre ossibili metodi : 
+due per file esterni e uno per un file interno ( quando siamo sicuri che js parta cìquando html e css siano già entrambi avviati)  
+se lo si mette infondo con il comando script non dovrebbero esserci probleimi ma in ogni caso si potrebbe mettere il comando 
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    });
+    </script>
+
+per i file esterni
+permettono alla pagina di caricarsi e poi caricheranno il codice 
+<u>defer e async</u>
+per usare defer bisogna usare l'attributo defer quando si chiama lo script tramite il comando: (# = nome del file di js)
+<script src="#" defer> <script>
+possono esserci più script e con defer vengono eseguiti dopo il caricamento di html  e css in ordine come sono stati scritti
+defer è consigliato soprattutto quando ci sono delle variabili interconnesse nei diversi script 
+
+se invece sono tutti per scopi diversi si può usare async 
+<script src="#" async> <script>
+se ce ne sono due correlati e uno no si possono mettere i correlati con defer e l'altro con async
+
+
+
+<H1>LE VARIABILI<H2>
+differenza tra var e let  
+
+il comando prompt fa uscire una finestra chiedendo all'untente di inserire una parola o una frase per eseguire una qualche azione sul sito 
