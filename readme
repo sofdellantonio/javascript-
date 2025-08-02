@@ -46,3 +46,5 @@ se ce ne sono due correlati e uno no si possono mettere i correlati con defer e 
 differenza tra var e let  
 
 il comando prompt fa uscire una finestra chiedendo all'untente di inserire una parola o una frase per eseguire una qualche azione sul sito 
+gli array si scrivono con 
+let collezione = [1,2,3,4];
