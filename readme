@@ -48,3 +48,9 @@ differenza tra var e let
 il comando prompt fa uscire una finestra chiedendo all'untente di inserire una parola o una frase per eseguire una qualche azione sul sito 
 gli array si scrivono con 
 let collezione = [1,2,3,4];
+ 
+ le variabili non sono tipizzate quindi non serve definire il tipo tipo in java o python, (string,int,bool)
+ javascript riconosce il tipo delle variabili e può cambiare col tempo
+ le costanti sono numeri che non devono cabiare nel tempo 
+type of mi da il tipo della variabile 
+ GLI OPERATORI E LE OPERAZIONI DEISPONIBLI IN JS
