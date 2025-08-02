@@ -95,3 +95,5 @@ aggiungere elemento infondo = data.push()
 rimuovere ultimo elemento = data.pop()
 aggiungere elemento all'inizio = data.unshift()
 rimuovere elemento all'inizio = data.shift()
+
+if, else if, 
