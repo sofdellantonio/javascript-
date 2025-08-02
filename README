@@ -73,6 +73,10 @@ con i doppi apici non ci sono problemi per l'apostrofo, quando si usano i signol
  
  i template literals 
  ~
-``
+ let stringa = "ciao sono una stringa";
+metodo html  -->`<h1>${stringa} bellissima`;
 
+
+
+metodi utili per le stringhe 
 
