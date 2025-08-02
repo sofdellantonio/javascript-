@@ -3,6 +3,6 @@
 let piatto = ({
     nome:"Gnocchi di Polenta con ragu di coniglio",
     prezzo: 12,
-    allergeni:["lattosio", "glutine"];
+    allergeni:["lattosio", "glutine"],
     note: ""
 });

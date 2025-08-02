@@ -79,4 +79,19 @@ metodo html  -->`<h1>${stringa} bellissima`;
 
 
 metodi utili per le stringhe 
+stringa.indexOf
+string.slice(punto di partenza, fino a dove) come prendere una stringa da un ounto a fino a un punto b 
+lowerCase, upperCase, replace(sostituisce la parola)
 
+Array
+-data.length restituisce la lunghexxa dell'array
+-per accedere a tutti i dati con il for 
+for(i=0; i<data.lenght, i++){
+    console.log(data[i]);
+}
+
+se ho una stringa con tipo delle virgiole pèosso splittarla e convertirla in un array stramite il comando split 
+aggiungere elemento infondo = data.push()
+rimuovere ultimo elemento = data.pop()
+aggiungere elemento all'inizio = data.unshift()
+rimuovere elemento all'inizio = data.shift()
