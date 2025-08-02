@@ -8,7 +8,7 @@ let result = number*number*number;
 console.log(result);
 return result;
 }
-
+ 
 button.addEventListener('click', ()=>{
     title.innerHTML = cubo(numero.value);
 })
