@@ -54,3 +54,9 @@ let collezione = [1,2,3,4];
  le costanti sono numeri che non devono cabiare nel tempo 
 type of mi da il tipo della variabile 
  GLI OPERATORI E LE OPERAZIONI DEISPONIBLI IN JS
+
+ metodo per i numeri è tofixed 
+ numero.toFixed(quanti decimali vogliamo dopo la virgola);
+ -convertire stringa un un numero
+ Number(stringa)
+

@@ -1,5 +1,3 @@
-let nome = "ciao";
-let cognome;
 
 // definire un oggetto 
 let persona = {
@@ -11,3 +9,6 @@ let persona = {
     coloriPreferiti: ["blu", "rosa", "verde", "arancione"]
 };
 console.log(persona.nome);
+
+let nuvola = "23";
+console.log(Number(nuvola)-8);
