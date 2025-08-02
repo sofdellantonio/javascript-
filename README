@@ -74,7 +74,7 @@ con i doppi apici non ci sono problemi per l'apostrofo, quando si usano i signol
  i template literals 
  ~
  let stringa = "ciao sono una stringa";
-metodo html  -->`<h1>${stringa} bellissima`;
+metodo html  -->`<h1>${stringa} bellissima`;  ALT 96
 
 
 
@@ -97,3 +97,8 @@ aggiungere elemento all'inizio = data.unshift()
 rimuovere elemento all'inizio = data.shift()
 
 if, else if, 
+
+
+
+GLI EVENTI 
+sono quelle cose che possono succedere durante una pagina
