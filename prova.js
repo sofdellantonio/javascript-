@@ -9,6 +9,7 @@ let persona = {
     coloriPreferiti: ["blu", "rosa", "verde", "arancione"]
 };
 console.log(persona.nome);
+let testo = "Ciao sono una variabile";
+let elemento = `<h1>${testo}</h1`;
 
-let nuvola = "23";
-console.log(Number(nuvola)-8);
+document.body.innerHTML = elemento;

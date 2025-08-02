@@ -60,3 +60,19 @@ type of mi da il tipo della variabile
  -convertire stringa un un numero
  Number(stringa)
 
+
+ operatori di comperazione 
+differenza tra == e === è che == va verificare che il valore sia uguale (funziona anche con le stringhe), mentre === controlla che siano anche dello stesso tipo 
+
+
+--LE STRINGHE
+singoli apici o doppi apici (single quotes or double quotes)"" o '' non si possono mischiare
+con i doppi apici non ci sono problemi per l'apostrofo, quando si usano i signoli apici si può usare l'escaper del backslash
+'Ciao sono una stringa l/'amore' altrimenti "Ciao sono una stringa l'amore", meglio tenere sempre la stessa 
+ toString passi da qualsiasi tipo a stringhe
+ 
+ i template literals 
+ ~
+``
+
+
