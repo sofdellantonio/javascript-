@@ -103,3 +103,5 @@ if, else if,
 GLI EVENTI 
 sono quelle cose che possono succedere durante una pagina
 event handler 
+
+query selector seleziona un elemento con tag il tag inserito 
