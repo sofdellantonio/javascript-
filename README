@@ -105,3 +105,4 @@ sono quelle cose che possono succedere durante una pagina
 event handler 
 
 query selector seleziona un elemento con tag il tag inserito 
+eventi bubbling e capturing (stop propagation)

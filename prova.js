@@ -13,7 +13,12 @@ return result;
 button.addEventListener('click', ()=>{
     //title.innerHtml fa diventare il titolo già inserito il risultato della funzione cubo
     title.innerHTML = cubo(numero.value);
-})
+});
+let immagine = document.getElementById('logo');
+immagine.addEventListener('click', ()=>{
+    immagine.remove();  //rimuove l'immagine dal sito 
+    
+});
 
 
 
