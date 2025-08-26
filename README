@@ -106,3 +106,8 @@ event handler
 
 query selector seleziona un elemento con tag il tag inserito 
 eventi bubbling e capturing (stop propagation)
+
+
+SET TIMEOUT METTE UN TEMPO DI PAUSA IN CUI ESEGUIRE UNA FUNZIONE 
+set interval permette di eseguire la stessa azione a distanza del tot tempo da noi scelto
+()=> {} è come scrivere function(){}

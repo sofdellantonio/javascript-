@@ -1,4 +1,4 @@
-/** 
+
  let button = document.querySelector('button');
  let title = document.querySelector('h1');
  let numero = document.querySelector('input');
@@ -18,7 +18,8 @@ let immagine = document.getElementById('logo');
 immagine.addEventListener('click', ()=>{
     immagine.remove();  //rimuove l'immagine dal sito 
     
-});*/
+});
+/* QUESTA è LA VERSIONE VECCHIA DI FETCH 
 function loadAsset(url, type, callback){
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -36,7 +37,23 @@ function displayImage(blob){
     image.src = objectUrl;
     document.body.appendChild(image);//lo aggiunge al body del documento
 }
-loadAsset('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fit%2F&psig=AOvVaw1YBZXpVjbTKax9Czy-lftX&ust=1756280868025000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPDo5pv-p48DFQAAAAAdAAAAABAh', 'blob', displayImage)
+loadAsset('https://cdn-icons-png.flaticon.com/512/1094/1094625.png', 'blob', displayImage);*/
 
+//fa una richiesta fetch al link che contiene un json ma si potrebbe fare anche con un file json già presente nel progetto
+fetch('https://dogapi.dog/api-docs/v2/swagger.json').then(function (response){  //then: una volta che hai preso json, chiama la callback
+    return response.json(); //rende leggibile il contenuto
+}).then(function (json){ //prende il json e lo salva in una variabile 
+    classe = json;
+    console.log('Dati ', classe)
+}).catch(function(err){//catch serve per gestire l'errore
+    console.log('Fetch problem: ', err);
+});
+/**let prova = setTimeout(function(){
+    alert('ciao sono in timeout'); //per boccarlo si usa i cleartimeout come per esempio su un bottone
+}, 2000); //funzione da eseguire e il tempo di attesa si può anche fare la funzione esterna e chiamarla  */
 
-
+const createClock = setInterval(()=>{
+    let date = new Date;
+    let time = date.toLocaleTimeString();
+    document.getElementById('dataUp').textContent = time;
+},1000); //per fermarlo clearInterval
