@@ -1,4 +1,12 @@
-
+const messaggi ={
+    welcome: 'welcome',
+    registration: 'registration',
+    confermaRegistrazione: 'conferma-registrazione',
+    nuovoUtente: 'nuovo-utente',
+    creaNuovaRoom: 'crea-nuova-room',
+    elencoRoom: 'elenco-room',
+    entraInRoom: 'entra-in-room'
+};
  let button = document.querySelector('button');
  let title = document.querySelector('h1');
  let numero = document.querySelector('input');
@@ -57,3 +65,14 @@ const createClock = setInterval(()=>{
     let time = date.toLocaleTimeString();
     document.getElementById('dataUp').textContent = time;
 },1000); //per fermarlo clearInterval
+
+var socketClient = io();
+function registration(){
+    let nickname = document.getElementById('nickname');
+    socketClient.emit(messaggi.registration, nickname);
+}
+/*
+function creaRoom(){
+    let roomName = document.getElementByI
+}
+*/
