@@ -120,3 +120,5 @@ NODEJS
 nel terminale inserire il comando npm init e selezionare le cose fatte 
 verrà creare un package json  e bisogna installare anche express tramite il comando npm i express --save, che farà comparire il package.lost json
 anche per installare socket usare il comando <b>npm i socket.io --save</b>
+
+per eseguire una web app con node bisgona scrivere il comando sul terminale node nomeApp.js sostituendo "nomeApp" con il nome del file 
