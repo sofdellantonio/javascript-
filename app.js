@@ -45,7 +45,7 @@ const server = app.listen(config.port, () => {
 let utenti=[];
 let rooms = [];
 
-const io = socketio(server);
+const io = socket.io(server);
 
 //on consente di definire cosa deve fare il server quando un client chiede di stabilire una connessione.
 //il codice che il server deve eseguire va scritto nella funzione di callback 
