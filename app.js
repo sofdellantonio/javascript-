@@ -74,7 +74,7 @@ io.on(config.messaggi.connection, (socketServer)=>{
     socketServer.on(config.messaggi.creaNuovaRoom, roomName =>{
         roomName.push(roomName);
         io.emit(config.messaggi.elencoRoom, {
-            messaggio: 'elenco aggiornato',
+            messaggio: 'elenco room aggiornato',
             rooms: rooms
         });
     });
